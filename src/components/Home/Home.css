@@ -1,0 +1,85 @@
+/*************** global styles **********************/
+
+/* buttons */
+.btn-white {
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  color: white;
+
+  border: 2px solid white;
+  padding: 0.9rem 1.6rem;
+  display: inline-block;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+
+.btn-white:hover {
+  background: white;
+  color: rgb(0, 195, 255);
+}
+
+/*************** end of global styles **********************/
+
+/*************** hero **********************/
+.hero {
+  min-height: calc(100vh - 62px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-banner {
+  text-align: center;
+  color: white;
+  padding: 0 2rem;
+}
+
+.hero-title {
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  letter-spacing: 0.4rem;
+}
+
+.hero-text {
+  width: 85%;
+  margin: 0 auto;
+  letter-spacing: 0.25rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 0px) {
+  .hero {
+    background: linear-gradient(rgba(63, 145, 212, 0.5), rgba(0, 0, 0, 0.2)),
+      url("https://images.pexels.com/photos/1601217/pexels-photo-1601217.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+        center/cover no-repeat fixed;
+  }
+  .hero-title {
+    font-size: 2.5rem;
+    font-weight: bolder;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background: linear-gradient(rgba(63, 145, 212, 0.7), rgba(0, 0, 0, 0.7)),
+      url("https://images.pexels.com/photos/4075416/pexels-photo-4075416.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+        center/cover no-repeat fixed;
+  }
+
+  .hero-title {
+    font-size: 4.5rem;
+    font-weight: 400;
+  }
+
+  .hero-text {
+    width: 70%;
+  }
+}
+
+.accessories {
+  background: url(https://dji-official-fe.djicdn.com/dps/543042ff1c6dd24f943135decb521af0.jpg)
+    center/cover no-repeat fixed;
+}
+
+/*************** end of hero **********************/
